@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://_src/Controls/up.png" type="Texture" id=1]
+[ext_resource path="res://_src/Controls/down.png" type="Texture" id=2]
+[ext_resource path="res://_src/Controls/left.png" type="Texture" id=3]
+[ext_resource path="res://_src/Controls/right.png" type="Texture" id=4]
+
+[node name="Buttons" type="Node"]
+
+[node name="Up" type="TouchScreenButton" parent="."]
+
+visibility/light_mask = 0
+transform/pos = Vector2( 104, 416 )
+transform/scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 1 )
+pressed = null
+bitmask = null
+passby_press = false
+action = "up"
+visibility_mode = 0
+
+[node name="Down" type="TouchScreenButton" parent="."]
+
+visibility/light_mask = 0
+transform/pos = Vector2( 104, 624 )
+transform/scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 2 )
+pressed = null
+bitmask = null
+passby_press = false
+action = "down"
+visibility_mode = 0
+
+[node name="Left" type="TouchScreenButton" parent="."]
+
+visibility/light_mask = 0
+transform/pos = Vector2( 0, 520 )
+transform/scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 3 )
+pressed = null
+bitmask = null
+passby_press = false
+action = "left"
+visibility_mode = 0
+
+[node name="Right" type="TouchScreenButton" parent="."]
+
+visibility/light_mask = 0
+transform/pos = Vector2( 208, 520 )
+transform/scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 4 )
+pressed = null
+bitmask = null
+passby_press = false
+action = "right"
+visibility_mode = 0
+
+
