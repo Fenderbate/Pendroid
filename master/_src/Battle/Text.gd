@@ -20,8 +20,9 @@ func _init(parent):
 	self.parent.get_node("ScreenButtons").show()
 	self.parent.get_node("InventoryText").hide()
 	
-	self.parent.player = self.parent.get_node("Player_B")
-	self.parent.remove_child(parent.get_node("Player_B"))
+	if(self.parent.has_node("Player_B")):
+		self.parent.player = self.parent.get_node("Player_B")
+		self.parent.remove_child(parent.get_node("Player_B"))
 
 func update():
 	
@@ -37,6 +38,7 @@ func update():
 	elif(dir == 0 and pressed): pressed = false
 	
 	if(Input.is_action_pressed("A") and parent.get_node("ScreenButtons").get_frame() == 0 ): parent.state=load("res://_src/Battle/Fight.gd").new(parent)
+	if(Input.is_action_pressed("A") and parent.get_node("ScreenButtons").get_frame() == 2 ): parent.state=load("res://_src/Battle/Items.gd").new(parent)
 
 
 

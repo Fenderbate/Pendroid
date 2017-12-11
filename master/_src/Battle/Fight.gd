@@ -19,7 +19,7 @@ func _init(parent):
 	#set the player's pos @ fight start--------------------------
 	self.parent.player.set_pos(parent.get_node("Box").get_pos())
 	#------------------------------------------------------------
-	self.parent.add_child(parent.player)
+	if(!self.parent.has_node("Player_B")): self.parent.add_child(parent.player)
 	
 	
 	#set the length of the fight
