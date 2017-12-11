@@ -17,3 +17,4 @@ https://www.youtube.com/watch?v=EOlU8z-CkcA
 -A pályán való haladásban szerezne különböző fegyvereket és azok egyszerre
  csak egyikünk ellen lenne hatásos
 -A játékos fegyverek mellett gyógyító cuccokat is szerezhet
+
