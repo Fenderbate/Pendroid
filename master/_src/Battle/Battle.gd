@@ -18,9 +18,11 @@ onready var BRight = box.get_node("Right")
 onready var mask = box.get_node("Mask")
 
 const FIGHTPOS = Vector2(640,400)
-const TEXTPOS = Vector2(640,450)
+const TEXTPOS = Vector2(640,500)
 
 var state = null
+
+onready var player = get_node("Player_B")
 
 func _ready():
 	set_fixed_process(true)
@@ -30,7 +32,7 @@ func _ready():
 
 func _fixed_process(delta):
 	update()
-	state.update(self)
+	state.update()
 
 func _draw():
 	
