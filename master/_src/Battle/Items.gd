@@ -1,9 +1,7 @@
 
 extends Node
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
+#Load the player's items from the Global.gd script
 
 func _ready():
 	# Called every time the node is added to the scene.
