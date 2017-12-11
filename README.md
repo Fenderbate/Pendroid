@@ -12,9 +12,8 @@ Itt egy példa azoknak akik nem tudják miről beszélek:
 
 https://www.youtube.com/watch?v=EOlU8z-CkcA
 
--Mindannyiunknak egyedi támadásai lennének
--A végén egy end boss fightban mind négyünkkel kéne harcolnia egyszerre
--A pályán való haladásban szerezne különböző fegyvereket és azok egyszerre
- csak egyikünk ellen lenne hatásos
--A játékos fegyverek mellett gyógyító cuccokat is szerezhet
+* Mindannyiunknak egyedi támadásai lennének
+* A végén egy end boss fightban mind négyünkkel kéne harcolnia egyszerre
+* A pályán való haladásban szerezne különböző fegyvereket és azok egyszerre csak egyikünk ellen lenne hatásos
+* A játékos fegyverek mellett gyógyító cuccokat is szerezhet
 
