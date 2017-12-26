@@ -36,4 +36,10 @@ __Vastag szöveg - éppen készül__
   * Házelemek
   * Ellenfelek (Mi)
   * Támadások
+* Zene & Effektek:
+  * Zene:
+    * A pálya felfedezéséhez
+    * A harcokhoz
+  * Effektek:
+    * Effekt a beszédhez (ami lejátszódik minden egyes bezű után)
 * Story 
