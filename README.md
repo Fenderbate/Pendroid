@@ -17,3 +17,23 @@ https://www.youtube.com/watch?v=EOlU8z-CkcA
 * A pályán való haladásban szerezne különböző fegyvereket és azok egyszerre csak egyikünk ellen lenne hatásos
 * A játékos fegyverek mellett gyógyító cuccokat is szerezhet
 
+
+Tennivaló:
+
+Sima szöveg - még vár a sorára
+
+__Vastag szöveg - éppen készül__
+
+~~Áthúzott szöveg - Kész van~~
+
+
+* Támadások:
+  * Attila
+  * Dávid
+  * Kristóf
+  * Norbi
+* Grafika:
+  * Házelemek
+  * Ellenfelek (Mi)
+  * Támadások
+* Story 
