@@ -10,36 +10,10 @@ MOST JÖN A LÉNYEG: a játékos találkozna négy ellenféllel (pontosabban VEL
 harcrendszer lenne (ki kéne kerülnie a támadásainkat aztán visszatámad)
 Itt egy példa azoknak akik nem tudják miről beszélek:
 
-https://www.youtube.com/watch?v=EOlU8z-CkcA
+https://www.youtube.com/watch?v=P6AYXefeQMM
 
 * Mindannyiunknak egyedi támadásai lennének
 * A végén egy end boss fightban mind négyünkkel kéne harcolnia egyszerre
 * A pályán való haladásban szerezne különböző fegyvereket és azok egyszerre csak egyikünk ellen lenne hatásos
 * A játékos fegyverek mellett gyógyító cuccokat is szerezhet
 
-
-Tennivaló:
-
-Sima szöveg - még vár a sorára
-
-__Vastag szöveg - éppen készül__
-
-~~Áthúzott szöveg - Kész van~~
-
-
-* Támadások:
-  * Attila
-  * Dávid
-  * Kristóf
-  * Norbi
-* Grafika:
-  * Házelemek
-  * Ellenfelek (Mi)
-  * Támadások
-* Zene & Effektek:
-  * Zene:
-    * A pálya felfedezéséhez
-    * A harcokhoz
-  * Effektek:
-    * Effekt a beszédhez (ami lejátszódik minden egyes bezű után)
-* Story 

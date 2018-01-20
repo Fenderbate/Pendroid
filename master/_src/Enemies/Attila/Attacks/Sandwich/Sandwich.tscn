@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://_src/Enemies/Attila/Attacks/Sandwich/Sandwich.gd" type="Script" id=1]
+[ext_resource path="res://_src/Enemies/Attila/Attacks/Sandwich/sandwich.png" type="Texture" id=2]
+[ext_resource path="res://_src/Enemies/Attila/Attacks/Sandwich/Eating.tres" type="Animation" id=3]
+[ext_resource path="res://_src/Enemies/Attila/Attacks/Sandwich/MoveIn.tres" type="Animation" id=4]
+
+[node name="Sandwich" type="Control" groups=[ "Attack" ]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = -302.711
+margin/right = 40.0
+margin/bottom = -262.711
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Eating = ExtResource( 3 )
+anims/Move = ExtResource( 4 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "Move"
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.3
+one_shot = false
+autostart = false
+
+[connection signal="finished" from="AnimationPlayer" to="." method="EAT"]
+
+[connection signal="timeout" from="Timer" to="." method="CrumbFall"]
+
+

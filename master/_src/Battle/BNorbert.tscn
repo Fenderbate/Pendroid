@@ -1,0 +1,214 @@
+[gd_scene load_steps=13 format=1]
+
+[ext_resource path="res://_src/Battle/Battle.gd" type="Script" id=1]
+[ext_resource path="res://_src/Battle/bg.png" type="Texture" id=2]
+[ext_resource path="res://_src/Player_B/Player_B.tscn" type="PackedScene" id=3]
+[ext_resource path="res://_src/Battle/pixel.png" type="Texture" id=4]
+[ext_resource path="res://_src/Fonts/pixel2.fnt" type="BitmapFont" id=5]
+[ext_resource path="res://_src/Fonts/pixel.fnt" type="BitmapFont" id=6]
+[ext_resource path="res://_src/Battle/Text.gd" type="Script" id=7]
+[ext_resource path="res://_src/Enemies/Norbert/Norbert.tscn" type="PackedScene" id=8]
+
+[sub_resource type="SegmentShape2D" id=1]
+
+custom_solver_bias = 0.0
+a = Vector2( -32, -32 )
+b = Vector2( 32, -32 )
+
+[sub_resource type="SegmentShape2D" id=2]
+
+custom_solver_bias = 0.0
+a = Vector2( 32, -32 )
+b = Vector2( 32, 32 )
+
+[sub_resource type="SegmentShape2D" id=3]
+
+custom_solver_bias = 0.0
+a = Vector2( 32, 32 )
+b = Vector2( -32, 32 )
+
+[sub_resource type="SegmentShape2D" id=4]
+
+custom_solver_bias = 0.0
+a = Vector2( -32, 32 )
+b = Vector2( -32, -32 )
+
+[node name="Battle" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 720.0
+margin/bottom = 1280.0
+script/script = ExtResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+anchor_mode = 0
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+
+[node name="BG" type="Sprite" parent="."]
+
+transform/pos = Vector2( 720, 3.14722e-05 )
+transform/rot = -90.0
+z/z = -4096
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Text" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.05
+one_shot = true
+autostart = true
+
+[node name="Player_B" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 360, 640 )
+
+[node name="Box" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 360, 640 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="BG" type="Sprite" parent="Box"]
+
+z/z = -1
+texture = ExtResource( 4 )
+modulate = Color( 0, 0, 0, 1 )
+
+[node name="Top" type="CollisionShape2D" parent="Box"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Right" type="CollisionShape2D" parent="Box"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 1
+
+[node name="Down" type="CollisionShape2D" parent="Box"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 2
+
+[node name="Left" type="CollisionShape2D" parent="Box"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 3
+
+[node name="Mask" type="Light2D" parent="Box"]
+
+visibility/visible = false
+enabled = true
+texture = ExtResource( 4 )
+offset = Vector2( 0, 0 )
+scale = 1.0
+color = Color( 1, 1, 1, 1 )
+energy = 1.0
+mode = 3
+range/height = 0.0
+range/z_min = -1024
+range/z_max = 1024
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 2
+shadow/enabled = false
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 80.0
+shadow/item_mask = 1
+
+[node name="Health" type="Label" parent="Box"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -50.0
+margin/top = 0.0
+margin/right = 50.0
+margin/bottom = 60.0
+custom_fonts/font = ExtResource( 5 )
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="InfoText" type="Label" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 60.0
+margin/top = 900.0
+margin/right = 660.0
+margin/bottom = 1060.0
+custom_fonts/font = ExtResource( 6 )
+align = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script/script = ExtResource( 7 )
+
+[node name="Delay" type="Timer" parent="InfoText"]
+
+process_mode = 1
+wait_time = 0.05
+one_shot = true
+autostart = true
+
+[node name="Norbert" parent="." instance=ExtResource( 8 )]
+
+margin/left = 360.0
+margin/top = 640.0
+margin/right = 400.0
+margin/bottom = 680.0
+
+[connection signal="timeout" from="InfoText/Delay" to="InfoText" method="DelayTimeout"]
+
+
