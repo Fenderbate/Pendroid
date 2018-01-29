@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://_src/Enemies/Kristof/Attacks/Sweating/Sweating.gd" type="Script" id=1]
+[ext_resource path="res://_src/Enemies/Kristof/Attacks/Sweating/Drop.png" type="Texture" id=2]
+
+[node name="Sweating" type="Control" groups=[ "Attack" ]]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 377.0
+margin/top = 72.0
+margin/right = 417.0
+margin/bottom = 112.0
+script/script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.35
+one_shot = true
+autostart = true
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+modulate = Color( 0, 1, 0.015625, 1 )
+
+[connection signal="timeout" from="Timer" to="." method="DropFall"]
+
+
