@@ -12,7 +12,6 @@ outlines = [ Vector2Array( 8, -8, -8, -8, -8, 8, 8, 8, 8, -8 ) ]
 
 [node name="Ground" type="Sprite" parent="."]
 
-editor/display_folded = true
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 16, 32, 16, 16 )

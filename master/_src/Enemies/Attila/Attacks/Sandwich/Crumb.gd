@@ -11,7 +11,6 @@ func _ready():
 func OutOfScreen():
 	queue_free()
 
-
 func Hit( body ):
 	if(body.is_in_group("Player")):
 		body.Hurt(1)
