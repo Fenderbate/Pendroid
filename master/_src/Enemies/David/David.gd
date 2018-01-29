@@ -7,9 +7,10 @@ extends "../Base.gd"
 
 func _ready():
 	speech=[
-	["Hé az az én szendvicsem!",3,"angry"],
-	["",10,"attack",1],
-	["A többiek is meg fognak próbálni megállítani hasonló támadásokkal.",5],
+	["ASDASD",3,"angry"],
+	["",10,"attack",2],
+	["ASDASDASD",5],
+	["",5,"attack",1]
 	]
 
 func Attacks():
@@ -17,10 +18,17 @@ func Attacks():
 		pass
 	if(aindex == 1):
 		emit_signal("normal")
-		#get_parent().NewSize(3,3)
+		var nb = load("res://_src/Enemies/David/Attacks/Notebook/NoteBook.tscn").instance()
+		nb.targetnode = get_parent().get_node("Player_B")
+		nb.set_pos(Vector2(0,-nb.target_y-50))
+		add_child(nb)
 		attacking = false
 	elif(aindex == 2):
-		pass
+		var p = load("res://_src/Enemies/David/Attacks/Pencil/Pencil.tscn").instance()
+		p.set_pos(Vector2(0,-100))
+		p.targetnode = get_parent().get_node("Player_B")
+		add_child(p)
+		attacking = false
 	elif(aindex == 3):
 		pass
 	
