@@ -3,11 +3,11 @@ extends KinematicBody2D
 
 onready var line = preload("res://_src/Enemies/David/Attacks/Pencil/Line.tscn")
 
-var speed = 200
+var speed = 400
 var target = Vector2(0,0)
 var dashes = 5
-var distance = 10000
-var MAX_DISTANCE = 10000
+var distance = 7000
+var MAX_DISTANCE = 7000
 
 var attacking = false
 var addline = false

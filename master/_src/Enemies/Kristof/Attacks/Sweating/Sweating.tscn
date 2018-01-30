@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=2 format=1]
 
 [ext_resource path="res://_src/Enemies/Kristof/Attacks/Sweating/Sweating.gd" type="Script" id=1]
-[ext_resource path="res://_src/Enemies/Kristof/Attacks/Sweating/Drop.png" type="Texture" id=2]
 
 [node name="Sweating" type="Control" groups=[ "Attack" ]]
 
@@ -21,11 +20,6 @@ process_mode = 1
 wait_time = 0.35
 one_shot = true
 autostart = true
-
-[node name="Sprite" type="Sprite" parent="."]
-
-texture = ExtResource( 2 )
-modulate = Color( 0, 1, 0.015625, 1 )
 
 [connection signal="timeout" from="Timer" to="." method="DropFall"]
 

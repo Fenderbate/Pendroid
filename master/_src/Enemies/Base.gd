@@ -91,8 +91,8 @@ func Timeout():
 	timeout = false
 	attacking = false
 	for c in get_children(): if(c.is_in_group("Attack")):c.queue_free()
-	get_parent().get_node("Player_B").set_pos(Vector2(360,640))
-	get_parent().get_node("Player_B")
+	#get_parent().get_node("Player_B").set_pos(Vector2(360,640))
+	#get_parent().get_node("Player_B")
 	print("write proper ,method for returning to the middle in Base.gd line 95")
 	get_parent().NewSize(get_parent().BASESIZE.x,get_parent().BASESIZE.y)
 

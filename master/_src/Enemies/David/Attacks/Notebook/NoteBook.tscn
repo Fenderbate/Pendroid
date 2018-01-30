@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://_src/Enemies/David/Attacks/Notebook/NoteBook.gd" type="Script" id=1]
 [ext_resource path="res://_src/Enemies/David/Attacks/Notebook/David_book.png" type="Texture" id=2]
@@ -6,118 +6,102 @@
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -72, 144, -88, 192, -96, 152 )
+points = Vector2Array( -88, 148, -100, 188, -116, 148 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 112, 144, 104, 184, 88, 144 )
+points = Vector2Array( -188, 152, -200, 192, -216, 152 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 224, 136, 208, 184, 192, 144 )
+points = Vector2Array( 100, 144, 88, 184, 68, 144, 204, -204 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 24, 144, 16, 184, -8, 144 )
+points = Vector2Array( 212, 140, 192, 184, 176, 140, 204, -204 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -168, 152, -184, 192, -200, 152, -256, -216 )
+points = Vector2Array( 12, 144, -4, 184, -20, 148 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 216, -232, 272, 136, 224, 136, -256, -216 )
+points = Vector2Array( 204, -204, 260, 136, 212, 140 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -256, -216, 224, 136, 192, 144, 112, 144 )
+points = Vector2Array( -260, 152, -272, -204, 204, -204, -216, 152 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -256, -216, 112, 144, 88, 144 )
+points = Vector2Array( -188, 152, -216, 152, 204, -204, -116, 148 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -256, -216, 88, 144, 24, 144 )
+points = Vector2Array( -88, 148, -116, 148, 204, -204 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -200, 152, -248, 152, -256, -216 )
+points = Vector2Array( -20, 148, -88, 148, 204, -204, 12, 144 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -96, 152, -168, 152, -256, -216, -72, 144 )
+points = Vector2Array( 68, 144, 12, 144, 204, -204 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -8, 144, -72, 144, -256, -216 )
-
-[sub_resource type="ConvexPolygonShape2D" id=13]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -8, 144, -256, -216, 24, 144 )
-
-[sub_resource type="ConvexPolygonShape2D" id=14]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -8, 144, 24, 144, 24, 144 )
+points = Vector2Array( 176, 140, 100, 144, 204, -204 )
 
 [node name="NoteBook" type="RigidBody2D" groups=[ "Attack" ]]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = true
 shapes/1/shape = SubResource( 2 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = true
 shapes/2/shape = SubResource( 3 )
-shapes/2/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = true
 shapes/3/shape = SubResource( 4 )
-shapes/3/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = true
 shapes/4/shape = SubResource( 5 )
-shapes/4/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = true
 shapes/5/shape = SubResource( 6 )
-shapes/5/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = true
 shapes/6/shape = SubResource( 7 )
-shapes/6/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = true
 shapes/7/shape = SubResource( 8 )
-shapes/7/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/7/trigger = true
 shapes/8/shape = SubResource( 9 )
-shapes/8/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/8/trigger = true
 shapes/9/shape = SubResource( 10 )
-shapes/9/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/9/trigger = true
 shapes/10/shape = SubResource( 11 )
-shapes/10/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/10/trigger = true
 shapes/11/shape = SubResource( 12 )
-shapes/11/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/11/trigger = true
-shapes/12/shape = SubResource( 13 )
-shapes/12/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
-shapes/12/trigger = true
-shapes/13/shape = SubResource( 14 )
-shapes/13/transform = Matrix32( 1, 0, 0, 1, -17.6, -0.799988 )
-shapes/13/trigger = true
 collision/layers = 1
 collision/mask = 1
 mode = 0
@@ -127,7 +111,7 @@ bounce = 0.0
 gravity_scale = 0.0
 custom_integrator = false
 continuous_cd = 0
-contacts_reported = 1
+contacts_reported = 20
 contact_monitor = true
 sleeping = false
 can_sleep = true
@@ -144,14 +128,6 @@ transform/rot = 90.0
 transform/scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 2 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-
-transform/pos = Vector2( -17.6, -0.799988 )
-build_mode = 0
-polygon = Vector2Array( 216, -232, -256, -216, -248, 152, -200, 152, -184, 192, -168, 152, -96, 152, -88, 192, -72, 144, -8, 144, 16, 184, 24, 144, 24, 144, 88, 144, 104, 184, 112, 144, 192, 144, 208, 184, 224, 136, 272, 136 )
-shape_range = Vector2( 0, 13 )
-trigger = true
-
 [node name="Timer" type="Timer" parent="."]
 
 process_mode = 1
@@ -165,6 +141,13 @@ playback/process_mode = 0
 playback/active = false
 playback/repeat = false
 playback/speed = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -272, -204, 204, -204, 260, 136, 212, 140, 192, 184, 176, 140, 100, 144, 88, 184, 68, 144, 12, 144, -4, 184, -20, 148, -88, 148, -100, 188, -116, 148, -188, 152, -200, 192, -216, 152, -260, 152 )
+shape_range = Vector2( 0, 11 )
+trigger = true
 
 [connection signal="body_enter" from="." to="." method="Hit"]
 

@@ -32,6 +32,7 @@ func AttackNow():
 
 
 func Hit( body ):
+	print(body.get_name())
 	if(body.is_in_group("Player") and !hit):
 		body.Hurt(1)
 		hit = true
